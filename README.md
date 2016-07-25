@@ -11,5 +11,29 @@ yasm简介
 
 	./configure
 	make && make install
+1.3.交叉编译
+
+	./configure --host=arm-linux --prefix=/usr/local/x264-arm --enable-shared --enable-debug --disable-asm
+
+修改配置文件
 
 
+
+	vi config.mak
+
+
+
+ 
+
+
+
+把里面的的
+
+
+	cc=gcc 改成cc=arm-linux-gcc
+
+	ar=ar 改成ar=arm-linux-ar
+
+	ranlib=ranlib 改成 ranlib=arm-linux-ranlib
+
+	LD=gcc -o 改成LD=arm-linux-gcc -o 
