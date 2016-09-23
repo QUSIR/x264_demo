@@ -37,3 +37,6 @@ yasm简介
 	ranlib=ranlib 改成 ranlib=arm-linux-ranlib
 
 	LD=gcc -o 改成LD=arm-linux-gcc -o 
+
+#程序样例
+在目录`test`下，编译成功的平台在X86，ARM平台下编译不成功，Android平台还没试。
